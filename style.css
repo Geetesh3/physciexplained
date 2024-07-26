@@ -2,7 +2,6 @@
 
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -118,14 +117,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px 5px 0px 5px;
+    margin: 20px 5px 10px 5px;
+    border: 2px solid;
+    border-style: dashed;
 
 }
-
-
-
-
-
 
 
 /* responsiveness start */
