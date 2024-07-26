@@ -1,3 +1,5 @@
+document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+
 document.addEventListener("DOMContentLoaded", () => {
     const wishMessage = document.getElementById("wishMessage");
     const wishText = document.getElementById("wishText");
