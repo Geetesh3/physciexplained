@@ -1,0 +1,16 @@
+/* daily-quotes-styles.css */
+
+/* Copy and paste the relevant styles from the source website */
+#DailyQuotes {
+    /* Your source website styles go here */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    /* ... add more styles as needed ... */
+}
+
+/* Additional styles for the wrapper div */
+#daily-quotes {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}

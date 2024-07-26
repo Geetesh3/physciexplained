@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="nofollow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        rel="nofollow">
+        <script defer src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js"></script>
+        <script defer src="https://www.gstatic.com/firebasejs/9.1.2/firebase-storage.js"></script>
     <title>PhySci Explained</title>
 </head>
 
@@ -33,7 +37,6 @@
             <span id="wishIcon" class="wish-icon"></span>
             <span id="wishText">Good Day!</span>
         </div>
-        <script src="script.js"></script>
         <!-- wishing End -->
         <!--logosection-->
         <div class="logo">
@@ -65,22 +68,31 @@
         <!-- 1st division Start-->
         <div class="first-div">
             <div class="sidbar-1-i">
-                <a href="" class="">Notes</a>
-                <a href="" class="">Solutions</a>
-                <a href="" class="">PYQ's</a>
-                <a href="" class="">E-books</a>
+                <a href="" class="s1-i-l">Notes</a>
+                <a href="" class="s1-i-l">Solutions</a>
+                <a href="" class="s1-i-l">PYQ's</a>
+                <a href="" class="s1-i-l">E-books</a>
+            </div>
+            <div class="sider-1-ii">
+                <section id="blog-posts">
+                    <!-- Blog posts will be inserted here by JavaScript -->
+                </section>
+                <div class="blog-content">
+                    <div class="blog-img">
 
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <!-- Main Content End-->
     <!-- Footer Start-->
     <footer>
-
+        <h1>© PhySci Explained. All rigths reserved</h1>
 
     </footer>
     <!-- Footer End-->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
