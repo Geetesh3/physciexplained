@@ -1,0 +1,246 @@
+:root{
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.runner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tag-news{
+    font-size: 22px;
+    font-weight: bold;
+    width: 144px;
+    background: transparent;
+    margin: 5px 0px 5px 50px;
+    padding: 0;
+}
+.blink{
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.runner-list{
+    display: flex;
+}
+.marq-link{    
+    display: flex;
+    margin: 4px 5px 4px 5px;;
+    text-decoration: none;
+    color: rgb(72, 11, 153);
+    align-items: center;
+    justify-content: center;
+}
+.marq-date{
+    margin: 0px 5px 0px 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.marq-list{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin:0px 100px 0px 100px;
+    border: black solid;
+    border-radius: 70px;
+}
+.Logo-png{
+    height: 120px;
+    margin:0px 60px 0px 50px;
+    border-radius: 70px;
+}
+.main-manu{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 135px;
+    font-size: 24px;
+    font-weight: 800;
+    list-style: none;
+}
+.m-link{
+    margin: 0px 24px 0px 24px;
+    text-decoration: none;
+    color: rgb(72, 11, 153);
+}
+
+
+
+
+
+
+
+/* responsiveness start */
+@media screen and (max-width: 1163px) {
+    
+    .logo {
+        display: flex;
+        height: 106px;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        border: black solid;
+        border-radius: 70px;
+    }
+    .Logo-png {
+        height: 72px;
+        margin: 0px 30px 0px 30px;
+        border-radius: 70px;
+    }
+    .tag-news {
+        font-size: 19px;
+        font-weight: bold;
+        width: 130px;
+        background: transparent;
+        margin: 5px 0px 5px 50px;
+        padding: 0;
+    }
+    .marq-list {
+        list-style: none;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:990px) {
+    .main-manu {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 58px;
+        font-size: 22px;
+        font-weight: 800;
+        list-style: none;
+    }
+    .Logo-png{
+        height: 102px;
+    }
+    .marq-list {
+        list-style: none;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    
+}
+@media screen and (max-width:845px) {
+.Logo-png{
+    height: 80px;
+    margin: 0px 0px 0px 5px;
+}
+.main-manu {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 30px;
+    font-size: 22px;
+    font-weight: 800;
+    list-style: none;
+}
+.tag-news{
+    font-size: 18px;
+}
+.runner-list {
+    display: flex;
+    margin: 0px -28px 0px 0px;
+}
+    
+}
+@media screen and (max-width:724px) {
+    .tag-news{
+        font-size: 18px;
+    margin: 0px 0px 0px 20px;
+    }
+    .runner-list{
+        margin: 0px 0px 0px 16px;
+    }
+    .main-manu {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 5px;
+        font-size: 18px;
+        font-weight: 800;
+        list-style: none;
+    }
+    .m-link {
+        margin: 0px 22px 0px 22px;
+        text-decoration: none;
+        color: rgb(72, 11, 153);
+    }
+    .logo {
+        display: flex;
+        height: 90px;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        border: black solid;
+        border-radius: 70px;
+    }
+}
+@media screen and (max-width:635px){
+    .logo{
+        height: 66px;
+    }
+    .Logo-png{
+        height: 62px;
+    }
+    .blink {
+        height: 28px;
+        margin: 12px 0px 8px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .logo {
+        margin: 0px 15px 0px 15px;
+        padding: 0px;
+    }
+    .Logo-png{
+        margin: 0px 0px 0px 14px;
+    }
+
+}
+
+@media screen and (max-width:510px) {
+    .tag-news{
+        margin: 0px 0px 0px 4px;
+        width: 80px;
+    }
+    .m-link{
+        margin: 0px 10px 0px 10px;
+    }
+    .tag-news{
+        margin:  0px 0px 0px 25px;
+    }
+    .marq-list{
+        margin: 0px 0px 0px 6px;
+    }
+    .logo {
+        margin: 0px 15px 0px 15px;
+        padding: 0px;
+    }
+    
+}
+@media screen and (max-width:446px) {
+    .main-manu{
+             margin: 0px 0px 0px 0px;
+            font-size: 15px;
+            font-weight: 600;
+    }
+    .Logo-png{
+        width: 86px;
+        height: 52px;
+    }
+}
