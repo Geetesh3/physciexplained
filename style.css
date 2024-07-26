@@ -50,6 +50,42 @@
     font-size: 20px;
     font-weight: bold;
 }
+/* wishing */
+#wishMessage {
+    font-size: 2em;
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 175px 10px 0px;
+}
+.wish-icon {
+    margin-right: 10px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+.morning {
+    color: #ff69b4; /* Pink for morning */
+}
+
+.afternoon {
+    color: #ffa500; /* Orange for afternoon */
+}
+
+.evening {
+    color: #1e90ff; /* DodgerBlue for evening */
+}
+
+.night {
+    color: #9370db; /* MediumPurple for night */
+}
+/* end wishing */
 .logo{
     display: flex;
     height: auto;
@@ -259,7 +295,41 @@
 }
 
 }
-
+@media screen and (max-width:545px){
+    #wishMessage {
+        font-size: 2em;
+        transition: opacity 1s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px 10px 0px;
+    }
+    .wish-icon {
+        margin-right: 10px;
+    }
+    .hidden {
+        opacity: 0;
+    }
+    
+    .visible {
+        opacity: 1;
+    }
+    .morning {
+        color: #ff69b4; /* Pink for morning */
+    }
+    
+    .afternoon {
+        color: #ffa500; /* Orange for afternoon */
+    }
+    
+    .evening {
+        color: #1e90ff; /* DodgerBlue for evening */
+    }
+    
+    .night {
+        color: #9370db; /* MediumPurple for night */
+    }
+}
 @media screen and (max-width:510px) {
     .tag-news{
         margin: 0px 0px 0px 4px;
