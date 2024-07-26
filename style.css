@@ -58,8 +58,8 @@
     border-radius: 70px;
 }
 .Logo-png{
-    height: 120px;
-    margin:0px 60px 0px 50px;
+    height: 118px;
+    margin: 0px 118px 0px 113px;
     border-radius: 70px;
 }
 .main-manu{
@@ -94,8 +94,8 @@
         border-radius: 70px;
     }
     .Logo-png {
-        height: 72px;
-        margin: 0px 30px 0px 30px;
+        height: 100px;
+        margin: 0px 40px 0px 80px;
         border-radius: 70px;
     }
     .tag-news {
@@ -135,9 +135,19 @@
     
 }
 @media screen and (max-width:845px) {
-.Logo-png{
-    height: 80px;
-    margin: 0px 0px 0px 5px;
+    .logo {
+        display: flex;
+        height: 170px;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        border: black solid;
+        border-radius: 70px;
+        flex-direction: column;
+    }
+    .Logo-png{
+        height: 130px;
+        border: none;
+        border-radius: 70px;
 }
 .main-manu {
     display: flex;
@@ -168,7 +178,7 @@
         display: flex;
         align-items: center;
         margin: 0px 0px 0px 5px;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 800;
         list-style: none;
     }
@@ -179,17 +189,36 @@
     }
     .logo {
         display: flex;
-        height: 90px;
+        height: 170px;
         align-items: center;
         margin: 0px 50px 0px 50px;
         border: black solid;
         border-radius: 70px;
+        flex-direction: column;
     }
+    .Logo-png{
+        height: 130px;
+        border: none;
+        border-radius: 70px;
+        margin: 0;
+}
 }
 @media screen and (max-width:635px){
-    .logo{
-        height: 66px;
+    .logo {
+        display: flex;
+        height: 170px;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        border: black solid;
+        border-radius: 70px;
+        flex-direction: column;
     }
+    .Logo-png{
+        height: 130px;
+        border: none;
+        border-radius: 70px;
+        margin: 0;
+}
     .Logo-png{
         height: 62px;
     }
@@ -202,14 +231,22 @@
     }
 
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:630px) {
     .logo {
-        margin: 0px 15px 0px 15px;
-        padding: 0px;
+        display: flex;
+        height: 170px;
+        align-items: center;
+        margin: 0px 50px 0px 50px;
+        border: black solid;
+        border-radius: 70px;
+        flex-direction: column;
     }
     .Logo-png{
-        margin: 0px 0px 0px 14px;
-    }
+        height: 130px;
+        border: none;
+        border-radius: 70px;
+        margin: 0;
+}
 
 }
 
@@ -223,6 +260,7 @@
     }
     .tag-news{
         margin:  0px 0px 0px 25px;
+        font-size: 22px;
     }
     .marq-list{
         margin: 0px 0px 0px 6px;
@@ -231,16 +269,46 @@
         margin: 0px 15px 0px 15px;
         padding: 0px;
     }
+    .Logo-png{
+        margin: 0;
+    }
     
 }
 @media screen and (max-width:446px) {
     .main-manu{
              margin: 0px 0px 0px 0px;
-            font-size: 15px;
+            font-size: 22px;
             font-weight: 600;
     }
-    .Logo-png{
-        width: 86px;
-        height: 52px;
+    .logo {
+        height: 100px;
+        margin: 0px;
     }
+    .Logo-png{
+        height: 114px;
+        margin: 0px;
+    }
+    .m-link{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:390px) {
+    .Logo-png {
+        height: 110px;
+        width: 97px;
+        margin: 0;
+    }   
+.main-manu{
+    margin: 0px 0px 0px 0px;
+   font-size: 15px;
+   font-weight: 600;
+}
+.logo {
+    margin: 0px 15px 0px 15px;
+    padding: 0px;
+    height: 100px;
+}
+.m-link{
+    font-size: 20px;
+}
 }
