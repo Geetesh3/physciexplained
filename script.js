@@ -109,3 +109,27 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .catch(error => console.error('Error fetching blog posts:', error));
 });
+function openTab(event, tabName) {
+    var i, tabContent, tabLinks;
+
+    // Hide all tab content
+    tabContent = document.getElementsByClassName("tab-content-item");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+
+    // Remove the 'active' class from all tab links
+    tabLinks = document.getElementsByClassName("tab-link");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab content and add 'active' class to the corresponding tab link
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
+// Set default active tab
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelector('.tab-link').click();
+});

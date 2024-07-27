@@ -68,39 +68,60 @@
         <!-- Quote Start-->
         <!-- 1st division Start-->
         <div class="first-div">
-            <div class="sidbar-1-i">
-                <a href="" class="s1-i-l">Notes</a>
-                <a href="" class="s1-i-l">Solutions</a>
-                <a href="" class="s1-i-l">PYQ's</a>
-                <a href="" class="s1-i-l">E-books</a>
-            </div>
-            <div class="dropdown">
-                <button class="dropdown-button" onclick="toggleSection('section1')">Class Xi Notes</button>
-                <div id="section1" class="dropdown-content">
-                    <section id="blog-posts">
-                
-                        <!-- Blog posts will be inserted here by JavaScript -->
-                    </section>
+                        <!-- tab container Start  -->
+            <div class="tab-container">
+                <div class="tab-menu">
+                    <button class="tab-link" onclick="openTab(event, 'Tab1')">Notes</button>
+                    <button class="tab-link" onclick="openTab(event, 'Tab2')">Solutions</button>
+                    <button class="tab-link" onclick="openTab(event, 'Tab3')">eBooks</button>
+                </div>
+                <div class="tab-content">
+                    <div id="Tab1" class="tab-content-item">
+                                    <!-- 1st content start  -->
+                    <div class="dropdown">
+                        <button class="dropdown-button" onclick="toggleSection('section1')">Class Xi Notes</button>
+                        <div id="section1" class="dropdown-content">
+                            <section id="blog-posts">
+                        
+                                <!-- Blog posts will be inserted here by JavaScript -->
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 1st content end  -->
+                     <!-- 2nd content start  -->
+                    <div class="dropdown">
+                        <button class="dropdown-button" onclick="toggleSection('section2')">Class XII Notes</button>
+                        <div id="section2" class="dropdown-content">
+                            <section id="class-Xii-Notes">
+                        
+                                <!-- Blog posts will be inserted here by JavaScript -->
+                            </section>
+                        </div>
+                    </div>
+                    <!-- 2nd content end  -->
+                    </div>
+                    <div id="Tab2" class="tab-content-item">
+                        <h2>Comming Soon </h2>
+                        <p>Please Waitting</p>
+                    </div>
+                    <div id="Tab3" class="tab-content-item">
+                        <h2>Comming Soon</h2>
+                        <p>Please Waitting</p>
+                    </div>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropdown-button" onclick="toggleSection('section2')">Class XII Notes</button>
-                <div id="section2" class="dropdown-content">
-                    <section id="class-Xii-Notes">
-                
-                        <!-- Blog posts will be inserted here by JavaScript -->
-                    </section>
-                </div>
-            </div>
-                </div>
-            </div>
+            <!-- tab container end  -->
+
         </div>
+                <!-- first-div end  -->
     </main>
     <!-- Main Content End-->
     <!-- Footer Start-->
     <footer>
         <h1 class="copy-tag">© PhySci Explained. All rigths reserved</h1>
-
+        <ul class="b-menu">
+            <a href="/privacy-policy.html" class="privacypage">Privacy Policy</a>
+        </ul>
     </footer>
     <!-- Footer End-->
     <script src="script.js"></script>

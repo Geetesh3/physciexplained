@@ -138,28 +138,60 @@ body{
     border-style: dashed;
 
 }
-.sidbar-1-i{
-    font-size: 20px;
-    font-family: cursive;
+.tab-container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.tab-menu {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    font-weight: 600;
+    margin-bottom: 20px;
+    height: 48px;
 }
-.s1-i-l{
- text-decoration: none;   
- color: rgb(72, 11, 153);
-}
-.Si-tag{
-    margin: 16px 0px 16px 42px;
-    font-size: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
+
+.tab-link {
+    background-color:transparent;
     border: none;
+    outline: none;
+    padding: 10px 20px;
     cursor: pointer;
-    width: 100%;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    color: rgb(72, 11, 153);
 }
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: #ccc;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.tab-content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.tab-content-item {
+    display: none;
+    min-width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content-item.active {
+    display: block;
+}
+
 .dropdown{
     margin: 24px 0px 24px 0px;
 }
@@ -267,14 +299,23 @@ body{
 
 /* footer Start */
 footer{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 8px;
     margin: 5px 0px 0px 0px;
     background-color: blanchedalmond;
-    height: 150px;
-    font-family: 'Font Awesome 6 Free'
+    height: 66px;
+    font-family: 'Font Awesome 6 Free';
+
+}
+.copy-tag{
+    margin: 10px 10px 10px 10px;
+}
+.b-menu{
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
 }
 /* footer end  */
 
@@ -578,7 +619,7 @@ footer{
         font-size: 6px;
         margin: 5px 0px 0px 0px;
         background-color: blanchedalmond;
-        height: 35px;
+        height: 66px;
         font-family: 'Font Awesome 6 Free';
     }
 }
