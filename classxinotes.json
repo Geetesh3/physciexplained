@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Chapter 1: Physical world",
+        "content": "Physics and its laws",
+        "download_link": "https://firebasestorage.googleapis.com/v0/b/YOUR_PROJECT_ID.appspot.com/o/sample1.pdf?alt=media&token=YOUR_ACCESS_TOKEN"
+    },
+    {
+        "title": "Chapter 2: Units and measurement",
+        "content": "Physical quantities and their measurement, Scientific notation, Significant figures",
+        "download_link": "https://firebasestorage.googleapis.com/v0/b/YOUR_PROJECT_ID.appspot.com/o/sample1.pdf?alt=media&token=YOUR_ACCESS_TOKEN"
+    },
+    {
+        "title": "Chapter 3: Motion in a Straight Line",
+        "content": "Distance, displacement, and coordinate systems,Average velocity and average speed,Velocity and speed from graphs",
+        "download_link": "https://firebasestorage.googleapis.com/v0/b/YOUR_PROJECT_ID.appspot.com/o/sample1.pdf?alt=media&token=YOUR_ACCESS_TOKEN"
+    },
+    {
+        "title": "Chapter 4: Motion in a Plane",
+        "content": "Introduction to vectors and two-dimensional motion,Analyzing vectors using trigonometry,Review: Unit vectors",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 5: Law of Motion",
+        "content": "Introduction to forces and free body, Newton's first law, second law and third law, Normal force and contact force",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 6: Work, Energy and Power",
+        "content": "Introduction to work, Kinetic energy, Work-energy theorem, Gravitational potential energy and conservative forces",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 7: System of particles and Rotational Motion",
+        "content": "Centre of mass, Introduction to rotational motion, Angular kinematics, Torque and equilibrium",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 8: Gravitation",
+        "content": "Newton's law of gravitation, Gravitational potential energy at large distances",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 9: Mechanical Properties Of Solids",
+        "content": "Stress, strain, and modulus of elasticity, Shear and bulk stress",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 10: Mechanical Properties Of Fluids",
+        "content": "Density and pressure, Buoyant force and Archimedes' principle,Fluid dynamics, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 11: Thermal Properties of matter",
+        "content": "Measurement of temperature and pressure, Specific heat and heat transfer, Modes of heat transfer, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 12: Thermodynamics",
+        "content": "Zeroth and first law of thermodynamics, Work from PV graph and internal energy, Thermodynamic processes and Carnot cycle",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 13: Kinetic Theory",
+        "content": "Ideal gas equation, Kinetic molecular theory of gases",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 14: Oscillations",
+        "content": "Introduction to simple harmonic motion, Simple harmonic motion in spring-mass systems, Simple pendulums, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 15: Waves",
+        "content": "Introduction to waves, Wave characteristics, Wave interference, more",
+        "download_link": ""
+    }
+
+]

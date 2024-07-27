@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Chapter 1: Electric Charges and Field",
+        "content": "Electric charges, Conservation of charge, Coulomb's law-force between two-point charges, more",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 2: Electrostatic Potential and Capacitance",
+        "content": "Physical quantities and their measurement, Scientific notation, Significant figures",
+        "download_link": "Electric potential, potential difference, electric potential due to a point charge, a dipole and system of charges, more"
+    },
+    {
+        "title": "Chapter 3: Current Electricity",
+        "content": "Electric current, flow of electric charges in a metallic conductor, drift velocity, more",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 4: Moving Charges and Magnetism",
+        "content": "Concept of magnetic field, Oersted's experiment,Biot - Savart law and its application to current carrying circular loop, more",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 5: Magnetism and Matter",
+        "content": "Bar magnet, bar magnet as an equivalent solenoid (qualitative treatment only), magnetic field intensity, more",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 6: Electromagnetic Induction",
+        "content": "Electromagnetic induction; Faraday's laws, induced EMF and current; Lenz's Law, Self and mutual inductio, more",
+        "download_link": ""
+    },
+    {
+        "title": "Chapter 7: Alternating Current",
+        "content": "Alternating currents, peak and RMS value of alternating current/voltage; reactance and impedance; LCR series, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 8: Electromagnetic Waves",
+        "content": "Basic idea of displacement current, Electromagnetic waves, their characteristics, their transverse nature, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 9: Ray Optics and Optical Instruments",
+        "content": "Ray Optics: Reflection of light, spherical mirrors, mirror formula, refraction of light, total internal reflection, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 10: Wave Optics",
+        "content": "Wave front and Huygen’s principle, reflection and refraction of plane wave at a plane surface using wave fronts, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 11: Dual Nature of Radiation and Matter",
+        "content": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations; Einstein's photoelectric equation particle nature of light, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 12: Atoms",
+        "content": "Alpha-particle scattering experiment; Rutherford's model of atom; Bohr model of hydrogen atom, more",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 13: Nuclei",
+        "content": "Composition and size of nucleus, nuclear force, Mass-energy relation, mass defect",
+        "download_link": ""
+    }
+    ,
+    {
+        "title": "Chapter 14: Semiconductor Electronics: Materials, Devices and Simple Circuits",
+        "content": "Energy bands in conductors, semiconductors and insulators",
+        "download_link": ""
+    }
+]
