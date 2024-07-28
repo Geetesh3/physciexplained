@@ -654,3 +654,24 @@ footer{
 }
 
 }
+ #Books {
+    margin: 1em 0;
+        display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.post {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1em 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}

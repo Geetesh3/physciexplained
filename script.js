@@ -133,3 +133,43 @@ function openTab(event, tabName) {
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('.tab-link').click();
 });
+const firebaseConfig = {
+    apiKey: "AIzaSyDcwiDVr2jyTBuxs4tQu6OHvaUfL6NdJFI",
+    authDomain: "physciexplained-40f47.firebaseapp.com",
+    databaseURL: "https://physciexplained-40f47-default-rtdb.firebaseio.com",
+    projectId: "physciexplained-40f47",
+    storageBucket: "physciexplained-40f47.appspot.com",
+    messagingSenderId: "724802637102",
+    appId: "1:724802637102:web:6e796aa81beb6d78113ebf",
+    measurementId: "G-VY64VRCS3Z"
+  };
+// Initialize Firebase
+// Book Section Start
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+const storage = firebase.storage();
+
+const form = document.getElementById('new-Book-form');
+const postsList = document.getElementById('Book-list');
+
+function renderPosts() {
+    postsList.innerHTML = '';
+    database.ref('Books').once('value', (snapshot) => {
+        const posts = snapshot.val();
+        for (let id in posts) {
+            const post = posts[id];
+            const postDiv = document.createElement('div');
+            postDiv.className = 'post';
+            postDiv.innerHTML = `
+                <h3 class="post-title">${post.title}</h3>
+                 ${post.imageUrl ? `<img src="${post.imageUrl}" alt="Image" style="max-width: 100%; height: 320px;">` : ''}<br>
+                <p>${post.content}</p><br>
+                ${post.fileUrl ? `<a href="${post.fileUrl}" download="file">Download attached file</a>` : ''}
+            `;
+            postsList.appendChild(postDiv);
+        }
+    });
+}
+
+renderPosts();
+// Book Section end
