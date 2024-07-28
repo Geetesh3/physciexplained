@@ -40,36 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const blogPostsContainer = document.getElementById('blog-posts');
-
-    fetch('classxinotes.json')
-        .then(response => response.json())
-        .then(posts => {
-            posts.forEach(post => {
-                const postElement = document.createElement('article');
-                postElement.classList.add('blog-post');
-
-                const postTitle = document.createElement('h2');
-                postTitle.textContent = post.title;
-
-                const postContent = document.createElement('p');
-                postContent.textContent = post.content;
-
-                const downloadLink = document.createElement('a');
-                downloadLink.href = post.download_link;
-                downloadLink.textContent = 'Download';
-                downloadLink.classList.add('download-link');
-
-                postElement.appendChild(postTitle);
-                postElement.appendChild(postContent);
-                postElement.appendChild(downloadLink);
-
-                blogPostsContainer.appendChild(postElement);
-            });
-        })
-        .catch(error => console.error('Error fetching blog posts:', error));
-});
 
 function toggleSection(sectionId) {
     var section = document.getElementById(sectionId);
@@ -173,3 +143,26 @@ function renderPosts() {
 
 renderPosts();
 // Book Section end
+
+// Marquee Notification 
+firebase.initializeApp(firebaseConfig);
+
+
+function showNotification(notification) {
+    const notificationElement = document.createElement('div');
+    notificationElement.className = 'notification';
+        notificationElement.innerHTML = ` (${new Date(notification.date).toLocaleString()}) ${notification.text} `;
+    if (notification.fileURL) {
+        const fileLink = document.createElement('a');
+        fileLink.href = notification.fileURL;
+        fileLink.textContent = 'Download Attachment';
+        fileLink.download = notification.fileURL.split('/').pop(); // Set the download attribute
+        notificationElement.appendChild(fileLink);
+    }
+    document.getElementById('notification-area').appendChild(notificationElement);
+}
+
+database.ref('notifications').on('child_added', function (snapshot) {
+    const notification = snapshot.val();
+    showNotification(notification);
+});
