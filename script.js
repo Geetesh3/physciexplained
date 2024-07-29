@@ -39,7 +39,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section.style.display === "none" || section.style.display === "") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const blogPostsContainer = document.getElementById('class-Xi-Notes');
 
+    fetch('classxinotes.json')
+        .then(response => response.json())
+        .then(posts => {
+            posts.forEach(post => {
+                const postElement = document.createElement('article');
+                postElement.classList.add('blog-post');
+
+                const postTitle = document.createElement('h2');
+                postTitle.textContent = post.title;
+
+                const postContent = document.createElement('p');
+                postContent.textContent = post.content;
+
+                const downloadLink = document.createElement('a');
+                downloadLink.href = post.download_link;
+                downloadLink.textContent = 'Download';
+                downloadLink.classList.add('download-link');
+
+                postElement.appendChild(postTitle);
+                postElement.appendChild(postContent);
+                postElement.appendChild(downloadLink);
+
+                blogPostsContainer.appendChild(postElement);
+            });
+        })
+        .catch(error => console.error('Error fetching blog posts:', error));
+});
 
 function toggleSection(sectionId) {
     var section = document.getElementById(sectionId);

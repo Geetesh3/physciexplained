@@ -236,7 +236,7 @@ body{
 
 
 /* blog start */
-#blog-posts {
+#class-Xi-Notes {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
