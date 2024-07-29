@@ -183,12 +183,27 @@ renderPosts();
 
 // Marquee Notification 
 firebase.initializeApp(firebaseConfig);
+// function showNotification(notification, key) {
+//     const notificationElement = document.createElement('div');
+//     notificationElement.className = 'notification';
+//     const date = new Date(notification.date);
+//     const formattedDate = date.toLocaleDateString(); // Format date without time
+//     notificationElement.innerHTML = `
+//              <p>${formattedDate }</p><br>
+//         <p> ${ notification.text}</p>
+//         ${notification.fileURL ? `<a href="${notification.fileURL}" download="${notification.fileURL.split('/').pop()}">Download Attachment</a>` : ''}
+//     `;
+//     document.getElementById('notification-area').appendChild(notificationElement);
+// }
 
 
-function showNotification(notification) {
+function showNotification(notification, key) {
     const notificationElement = document.createElement('div');
     notificationElement.className = 'notification';
-        notificationElement.innerHTML = ` (${new Date(notification.date).toLocaleString()}) ${notification.text} `;
+    const date = new Date(notification.date);
+    const formattedDate = date.toLocaleDateString(); // Format date without time
+    notificationElement.className = 'notification';
+        notificationElement.innerHTML = ` <li>${formattedDate}) ${notification.text} `;
     if (notification.fileURL) {
         const fileLink = document.createElement('a');
         fileLink.href = notification.fileURL;
@@ -203,3 +218,5 @@ database.ref('notifications').on('child_added', function (snapshot) {
     const notification = snapshot.val();
     showNotification(notification);
 });
+
+// New Notification 
