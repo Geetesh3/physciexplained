@@ -325,7 +325,7 @@ footer{
     font-size: 8px;
     margin: 5px 0px 0px 0px;
     background-color: blanchedalmond;
-    height: 66px;
+    height: 100px;
     font-family: 'Font Awesome 6 Free';
 
 }
@@ -648,7 +648,10 @@ footer{
         height: 110px;
         width: 97px;
         margin: 0;
-    }   
+    } 
+    footer{
+        height: 90px;
+    }  
 .main-manu{
     margin: 0px 0px 0px 0px;
    font-size: 15px;
