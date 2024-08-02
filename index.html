@@ -14,10 +14,13 @@
 <body>
     <!-- Header Content Start-->
     <header class="Main Header">
-        <div class="runner">
-            <div class="tag-news">Latest News:</div>
+        <a href="https://www.freecounterstat.com" title="website counters"><img
+                src="https://counter8.optistats.ovh/private/freecounterstat.php?c=dl9u38rqmnsjdfctc9j5ye2he8wq3b58"
+                border="0" title="website counters" alt="website counters"></a>
+        <!-- <div class="runner">
+            <div class="tag-news"></div>
             <marquee class="blink" behavior="scroll" scrollamount="" direction="left">
-                <!-- <ul class="runner-list">
+                <ul class="runner-list">
 
                     <a href="" class="marq-link">
                         <p class="marq-date">26/07/24</p>
@@ -28,11 +31,12 @@
                         <li class="marq-list">Electrostatics Class 12 Notes Uploaded |</li>
                     </a>
                     <a href="" class="marq-link"></a>
-                </ul> -->
+                </ul> 
 
             </marquee>
-        </div>
+        </div>-->
         <!-- wishing start -->
+        <div id="currentTime"></div><br>
         <div id="wishMessage" class="hidden">
             <span id="wishIcon" class="wish-icon"></span>
             <span id="wishText">Good Day!</span>
@@ -67,7 +71,7 @@
         <!-- Quote Start-->
         <!-- 1st division Start-->
         <div class="first-div">
-                        <!-- tab container Start  -->
+            <!-- tab container Start  -->
             <div class="tab-container">
                 <div class="tab-menu">
                     <button class="tab-link" onclick="openTab(event, 'Tab1')">Notes</button>
@@ -76,28 +80,28 @@
                 </div>
                 <div class="tab-content">
                     <div id="Tab1" class="tab-content-item">
-                                    <!-- 1st content start  -->
-                    <div class="dropdown">
-                        <button class="dropdown-button" onclick="toggleSection('section1')">Class Xi Notes</button>
-                        <div id="section1" class="dropdown-content">
-                            <section id="class-Xi-Notes">
-                        
-                                <!-- Blog posts will be inserted here by JavaScript -->
-                            </section>
+                        <!-- 1st content start  -->
+                        <div class="dropdown">
+                            <button class="dropdown-button" onclick="toggleSection('section1')">Class Xi Notes</button>
+                            <div id="section1" class="dropdown-content">
+                                <section id="class-Xi-Notes">
+
+                                    <!-- Blog posts will be inserted here by JavaScript -->
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 1st content end  -->
-                     <!-- 2nd content start  -->
-                    <div class="dropdown">
-                        <button class="dropdown-button" onclick="toggleSection('section2')">Class XII Notes</button>
-                        <div id="section2" class="dropdown-content">
-                            <section id="class-Xii-Notes">
-                        
-                                <!-- Blog posts will be inserted here by JavaScript -->
-                            </section>
+                        <!-- 1st content end  -->
+                        <!-- 2nd content start  -->
+                        <div class="dropdown">
+                            <button class="dropdown-button" onclick="toggleSection('section2')">Class XII Notes</button>
+                            <div id="section2" class="dropdown-content">
+                                <section id="class-Xii-Notes">
+
+                                    <!-- Blog posts will be inserted here by JavaScript -->
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 2nd content end  -->
+                        <!-- 2nd content end  -->
                     </div>
                     <div id="Tab2" class="tab-content-item">
                         <div id="notification-area"></div>
@@ -110,14 +114,15 @@
                     </div>
                 </div>
             </div>
+            
             <!-- tab container end  -->
-        
+
             <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database-compat.js"></script>   
-          
-            <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-storage-compat.js"></script>   
-          
-            <script src="script.js"></script>    <!-- first-div end  -->
+            <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-database-compat.js"></script>  
+
+            <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-storage-compat.js"></script>  
+
+            <script src="script.js"></script> <!-- first-div end  -->
     </main>
     <!-- Main Content End-->
     <!-- Footer Start-->
@@ -126,7 +131,7 @@
         <ul class="b-menu">
             <a href="/privacy-policy.html" class="privacypage">Privacy Policy</a><br><br>
             <a href="https://www.youtube.com/channel/UCeK7klJhBhE4Mh-LqlGHwiQ" class="privacypage">Youtube Channel</a>
-            
+
         </ul>
     </footer>
     <!-- Footer End-->

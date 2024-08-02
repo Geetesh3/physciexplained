@@ -1,5 +1,10 @@
 
-
+const element = document.getElementById('currentTime');
+setInterval(function () {
+    const currentDate = new Date();
+    const currentTime = currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+    element.textContent = "Current Time:" + currentTime;
+}, 1000); // Update every second
 document.oncontextmenu = document.body.oncontextmenu = function () { return true; }
 
 document.addEventListener("DOMContentLoaded", () => {
