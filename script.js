@@ -208,11 +208,11 @@ function showNotification(notification, key) {
     const date = new Date(notification.date);
     const formattedDate = date.toLocaleDateString(); // Format date without time
     notificationElement.className = 'notification';
-        notificationElement.innerHTML = ` <li>${formattedDate}) ${notification.text} `;
+        notificationElement.innerHTML = ` <li>(${formattedDate}) ${notification.text} `;
     if (notification.fileURL) {
         const fileLink = document.createElement('a');
         fileLink.href = notification.fileURL;
-        fileLink.textContent = 'Download Attachment';
+        fileLink.textContent = 'Download';
         fileLink.download = notification.fileURL.split('/').pop(); // Set the download attribute
         notificationElement.appendChild(fileLink);
     }
